@@ -1,0 +1,10 @@
+wbmDaemon is a fledgling tool for wrapping multiple instances of WBM to create pools of simulations primarily for parameter uncertainty exploration.
+
+The tool is fairly undeveloped and could stand to be made more generalizeable, with a more abstracted way of controlling customization.  Right now, new applications have needed to build on the core functionality.  That suggests to me (SZ) that a core kernel of functionality for this utility hasn't quite been achieved yet to start building around.
+
+This repo provides different project specific examples ofthe tool functionality.
+
+One is a manual exploration of parameter sensitivities. There were many upstream simulation bases (from upstream models - see Zuidema et al. In Review with PNAS, 2023), so there is some precedent for handling a suite of pre-canned upstream inputs.  From there, wbmDaemon adds in WBM parametric sensitivity to the suite of simulations and handles pooled model execution.
+
+Two is a wrapper package around the python utility SpotPy for hydrologic model parameter uncertainty exploration.
+
